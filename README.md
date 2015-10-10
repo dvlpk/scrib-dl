@@ -14,13 +14,15 @@ $ ruby scrib-dl http://www.scribd.com/doc/154732310/2-Donaldo-Schuller
 
 #EXAMPLE WITH PARAMETER
 
-$ ruby scrib-dl -a ./links.txt
+-Relative  
 
-Or
+$ ruby scrib-dl -a ./links.txt
 
 $ ruby scrib-dl -a ../links.txt
 
-Or
+$ ruby scrib-dl -a ../../ ..  /../links.txt
+
+-Absolute
 
 $ ruby scrib-dl -a /\<fullpath\>/links.txt
 
