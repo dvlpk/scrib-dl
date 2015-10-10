@@ -1,7 +1,7 @@
 # scrib-dl
 **scrib-dl** is a ruby script that downloads the free docs from scribd which consist from images. The script creates a folder with the name of the doc and downloading the images inside the document.
 
-~$ ruby scrib-dl URL
+**~$** ruby scrib-dl URL
 
 #OPTIONS
 
