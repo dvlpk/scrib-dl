@@ -5,7 +5,7 @@
 
 #OPTIONS
 
--a File  ----  File containing URLs to download.
+**\-a** File  ----  File containing URLs to download.
 
 #EXAMPLE WITHOUT PARAMETER
 
