@@ -22,7 +22,7 @@ $ ruby scrib-dl -a ../links.txt
 
 Or
 
-$ ruby scrib-dl -a /*<fullpath>*/links.txt
+$ ruby scrib-dl -a /<fullpath>/links.txt
 
 
 
