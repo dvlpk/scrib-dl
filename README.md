@@ -1,7 +1,7 @@
 # scrib-dl
 Download doc from scribd
 
-ruby scrib-dl URL
+$ ruby scrib-dl URL
 
 #OPTIONS
 
@@ -9,17 +9,17 @@ ruby scrib-dl URL
 
 EXAMPLE WITHOUT PARAMETER
 
-ruby scrib-dl http://www.scribd.com/doc/154732310/2-Donaldo-Schuller
+$ ruby scrib-dl http://www.scribd.com/doc/154732310/2-Donaldo-Schuller
 
 
 #EXAMPLE WITH PARAMETER
 
-ruby scrib-dl -a ./links.txt
+$ ruby scrib-dl -a ./links.txt
 
 or
 
-ruby scrib-dl -a ../links.txt
+$ ruby scrib-dl -a ../links.txt
 
 or 
 
-ruby scrib-dl -a /*fullpath*/links.txt
+$ ruby scrib-dl -a /*fullpath*/links.txt
