@@ -16,13 +16,13 @@ $ ruby scrib-dl http://www.scribd.com/doc/154732310/2-Donaldo-Schuller
 
 $ ruby scrib-dl -a ./links.txt
 
-+ or
+Or
 
 $ ruby scrib-dl -a ../links.txt
 
-+ or 
+Or
 
-$ ruby scrib-dl -a /*fullpath*/links.txt
+$ ruby scrib-dl -a /*<fullpath>*/links.txt
 
 
 
