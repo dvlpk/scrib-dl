@@ -6,7 +6,7 @@ require "shellwords"
 
 Ngn = Struct.new(:image_links, :images_downloaded, :links_downloaded,:images_to_download, :lnk, :links_array,:param, :path, :folder_name, :step)
 $engine = Ngn.new( )
-param_err_msg = "Usage : download_bk.rb [link] or [option] [url]\n\n \bOptions: \n\n-a File ------ File containing URLs to download.\n\n"
+param_err_msg = "Usage : scrib-dl [link] or [option] [url]\n\n \bOptions: \n\n-a File ------ File containing URLs to download.\n\n"
 
 def init()
 	$engine.image_links = Array.new
