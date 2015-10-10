@@ -9,22 +9,22 @@
 
 #EXAMPLE WITHOUT PARAMETER
 
-~$ ruby scrib-dl http://www.scribd.com/doc/154732310/2-Donaldo-Schuller
+**~$** ruby scrib-dl http://www.scribd.com/doc/154732310/2-Donaldo-Schuller
 
 
 #EXAMPLE WITH PARAMETER
 
--Relative  
+**\-Relative**  
 
-~$ ruby scrib-dl -a ./links.txt
+**~$** ruby scrib-dl -a ./links.txt
 
-~$ ruby scrib-dl -a ../links.txt
+**~$** ruby scrib-dl -a ../links.txt
 
-~$ ruby scrib-dl -a ../../ ..  /../links.txt
+**~$** ruby scrib-dl -a ../../ ..  /../links.txt
 
--Absolute
+**\-Absolute**
 
-$ ruby scrib-dl -a /\<fullpath\>/links.txt
+**~$** ruby scrib-dl -a /\<fullpath\>/links.txt
 
 
 
