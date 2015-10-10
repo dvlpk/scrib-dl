@@ -18,7 +18,7 @@ $ ruby scrib-dl -a ./links.txt
 
 + or
 
- $ ruby scrib-dl -a ../links.txt
+$ ruby scrib-dl -a ../links.txt
 
 + or 
 
