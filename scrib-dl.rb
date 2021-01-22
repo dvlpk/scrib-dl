@@ -3,6 +3,8 @@ require 'json'
 require 'open-uri'
 require 'uri'
 require "shellwords"
+require 'httparty'
+
 
 Ngn = Struct.new(:image_links, :images_downloaded, :links_downloaded,:images_to_download, :lnk, :links_array,:param, :path, :folder_name, :step)
 $engine = Ngn.new( )
@@ -98,9 +100,12 @@ end
 def get_containt( url )
 	begin
 		uri = URI.parse(URI::encode(url))
-		request = Net::HTTP::Get.new(url)
-		http = Net::HTTP.new(uri.host, uri.port)
-		return  http.request(request)
+		# request = Net::HTTP::Get.new(url)
+		# http = Net::HTTP.new(uri.host, uri.port)
+		res = HTTParty.get(uri)
+		print res.code
+		return  res
+		# return  http.request(request)
 	rescue => err
 		puts "Exception #{err} \n"+url.to_s
 	end
@@ -212,7 +217,7 @@ def main()
 	end
 
 	response = get_containt($engine.lnk);
-	if response.code == "200"
+	if response.code.to_i == 200
 		print "\nHtml content downloaded success\n"
 	else
 		print "\nError - cant open url!\n"
